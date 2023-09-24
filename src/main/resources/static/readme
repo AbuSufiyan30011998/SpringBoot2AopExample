@@ -1,0 +1,25 @@
+CHAPTER # 7 SPRING AOP
+AOP (Aspect Oriented Programming):-
+ It is used for “Cross-cutting-concern ” . It means separate business logic 
+and external services.
+ External service must behave as plug-in-code, that is without modifying 
+exited application, programmer, should able to add/remove external 
+services Example are :- Log4j,UnitTest,security,JMS,Crytography,Encode 
+and decode request/response ,filter management, request identity 
+process, etc………………………..
+AOP Terms
+1. Aspect:- It is a class, which indicates external services logic.
+2. Advice:- It is a method inside Aspect (class). It is also called as 
+implementation of Aspect.
+3. Pointcut: It is an expression which select the business class method to 
+connect with advice. But it will not tell which advice it is
+4. Joinpoint:- It is a combination of Advice and Pointcut expression . It 
+means “joinpoint says which business class method need what and how 
+many advice. 
+5. Target :- It is a pure business class object (before adding/without 
+external services logic).
+6. Weaving :- It is process done by weaver (sub component of spring 
+container ).It will add advice logic to target based on join points.
+7. Proxy:- It is a final output of weaving which contains business class logic 
+and selected advices logic.
+** ie Code linked at object level, not at class level.
